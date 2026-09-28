@@ -1,48 +1,97 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
+  <!-- dir attribute: Specifies the direction of text for the entire webpage
+  It is located in the html element. The page is set left-to-right (the default). -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <h1>The Chess Greats</h1>
-    </header>
-    <main>
-      <picture>
-        <img
-          src="images/queens-gambit.png"
-          alt="The Queen's Gambit"
-          width="800px"
-        />
-      </picture>
-      <p>
-        Chess is a two-player strategy board game. Everyone knows it. The
-        version we know today came up around the 16th century. A game involving
-        pure skill and no luck. Being the best or at least one of the best at
-        such a game is an incredible achievement. The greats of any endeavor are
-        never forgotten like Albert Einstein and Issac Newton in Science and
-        Mathematics or William Shakespeare in literature. Or in more tradition
-        sports like with Michael Jordan and Lebron James (the actual GOAT) in
-        basketball. That begs the question, "Who were the greatest players of
-        chess?". The three widely agreed upon best chess players of all time are
-        Magnus Carlsen, Garry Kasparov, and Robert (Bobby) James Fischer (my
-        favorite). These players each have their own unique accomplishments that
-        set them apart from the others. As for the true best, that is still
-        debated. Most people would likely say Carlsen today, but there are still
-        people who argue for Kasparov. Feel free to check out each of these
-        players more in-depth in the links below!
-      </p>
-    </main>
-    <nav>
-      <img src="images/fischer.png" alt="Fischer" width="300px" />
-      <a href="./fischer.html">Robert James Fischer</a>
-      <img src="images/kasparov.png" alt="Kasparov" width="300px" />
-      <a href="./kasparov.html">Garry Kasparov</a>
-      <img src="images/carlsen.png" alt="Carlsen" width="300px" />
-      <a href="./carlsen.html">Magnus Carlsen</a>
-    </nav>
+    <div class="page">
+      <header>
+        <hgroup>
+          <!-- hgroup element: Groups related heading content together.
+          It is located in the header element. It groups together h1 (main title) with p (subtitle). -->
+          <h1>The Chess Greats</h1>
+          <p class="center-text">
+            Exploring the greatest players in chess history
+          </p>
+        </hgroup>
+      </header>
+      <section>
+        <picture class="main-picture">
+          <!-- picture element: Allows different image sources to be selected based on
+          screen conditions. It is located in the main section. It is used to
+          display both the standard Queen's Gambit image on normal sized screens and 
+          a smaller Queen's Gambit image on narrower screens. -->
+          <source
+            media="(max-width: 1000px)"
+            srcset="images/queens-gambit-small.png"
+          />
+          <!-- source element: Provides an alternative image source based on certain conditions.
+          It is located inside the picture element. The source image is displayed when the viewport
+          is 1000px wide or smaller.-->
+          <img src="images/queens-gambit.png" alt="The Queen's Gambit" />
+        </picture>
+        <p>
+          Chess is a two-player strategy board game. Everyone knows it. The
+          version we know today came up around the 16th century. A game
+          involving pure skill and no luck. Being the best or at least one of
+          the best at such a game is an incredible achievement. The greats of
+          any endeavor are never forgotten like Albert Einstein and Isaac Newton
+          in Science and Mathematics or William Shakespeare in literature. Or in
+          more traditional sports like with Michael Jordan and Lebron James (the
+          actual GOAT) in basketball. That begs the question, "Who were the
+          greatest players of chess?". The three widely agreed upon best chess
+          players of all time are Robert (Bobby) James Fischer (my favorite),
+          Garry Kasparov, and Magnus Carlsen. These players each have their own
+          unique accomplishments that set them apart from the others. As for the
+          true best, that is still debated. Most people would likely say Carlsen
+          today, but there are still people who argue for Kasparov. Feel free to
+          check out each of these players more in-depth in the links below!
+        </p>
+        <p hidden>This website covers Fischer, Kasparov, and Carlsen.</p>
+        <!-- hidden attribute: Hides an element from being displayed.
+        It is located in paragraph element. It hides the text from the page. -->
+      </section>
+      <nav>
+        <div class="player">
+          <img
+            class="player-image"
+            src="images/fischer.png"
+            alt="Fischer"
+            width="300px"
+          />
+          <a class="player-link" href="./fischer.html">Robert James Fischer</a>
+        </div>
+        <div class="player">
+          <img
+            class="player-image"
+            src="images/kasparov.png"
+            alt="Kasparov"
+            width="300px"
+          />
+          <a class="player-link" href="./kasparov.html">Garry Kasparov</a>
+        </div>
+        <div class="player">
+          <img
+            class="player-image"
+            src="images/carlsen.png"
+            alt="Carlsen"
+            width="300px"
+          />
+          <a class="player-link" href="./carlsen.html">Magnus Carlsen</a>
+        </div>
+      </nav>
+      <section inert>
+        <!-- inert attribute: Makes an element and its contents non-interactive.
+        It is located in this section element. It makes the "Coming Soon" section
+        non-interactive while keeping it visible. -->
+        <h2>Coming Soon</h2>
+        <p class="center-text">More chess players will be added later.</p>
+      </section>
+    </div>
   </body>
 </html>

@@ -1,12 +1,48 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
+  <!-- dir attribute specifies the direction of text for the entire webpage
+  It is located in the html element. The page is set left-to-right (the default). -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carlsen</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Magnus Carlsen</h1>
+    <div class="page">
+      <header>
+        <h1>Magnus Carlsen</h1>
+      </header>
+      <section class="player-intro">
+        <p>
+          Magnus Carlsen is a Norwegian chess grandmaster and undoubtedly the
+          best from his country. He held the World Champion title from 2013-2023
+          having defeated former champion Vishy Anand for the title in 2013. He
+          also holds the World Rapid and Blitz Champion titles and is the
+          reigning Freestyle World Champion. He currently still holds the number
+          1 position in FIDE rankings since 2011. He also has held the highest
+          peak rating of 2882 and holds the record for the longest unbeaten
+          streak at an elite level in classical chess with 125 games undefeated.
+          He is highly argued as the best chess player of all time which I would
+          agree with.
+        </p>
+        <img
+          class="player-image"
+          src="images/carlsen.png"
+          alt="Magnus Carlsen"
+        />
+      </section>
+      <section>
+        <h2>Major Achievements</h2>
+        <ul class="achievements">
+          <li>- Five-time World Chess Champion</li>
+          <li>- Peak FIDE rating of 2882, the highest in history</li>
+          <li>- World No. 1 since July 2011</li>
+          <li>- 125-game unbeaten streak in classical chess</li>
+          <li>- Multiple-time World Rapid and World Blitz Champion</li>
+        </ul>
+      </section>
+      <a class="home-link" href="./index.html">Home</a>
+    </div>
   </body>
 </html>

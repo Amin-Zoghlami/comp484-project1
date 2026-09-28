@@ -1,12 +1,52 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
+  <!-- dir attribute specifies the direction of text for the entire webpage
+  It is located in the html element. The page is set left-to-right (the default). -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fischer</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Robert James Fischer</h1>
+    <div class="page">
+      <header>
+        <h1>Robert James Fischer</h1>
+      </header>
+      <section class="player-intro">
+        <p>
+          Robert James Fischer was an American Chess Grandmaster and is the
+          generally agreed upon best American Chess player in history. Some
+          argue he was even the greatest chess player of all time though that
+          claim is much more debatable. Regardless, he had one of the greatest
+          peaks for a chess player ever, having swept matches against Mark
+          Taimanov and Bent Larsen by 6-0 scores (almost unheard of). He later
+          went on to defeat reigning world champion Boris Spassky for the title
+          of world champion. This run from 1970 to 1972 is probably the greatest
+          achievement in chess history. Unfortunately, he lacks the longevity
+          when compared to the other greats like Kasparov and Carlsen. Despite
+          that, he is my personal favorite player to analyze and is a huge
+          inspiration for me and many others.
+        </p>
+        <img
+          class="player-image"
+          src="images/fischer.png"
+          alt="Bobby Fischer"
+        />
+      </section>
+      <section>
+        <h2>Major Achievements</h2>
+        <ul class="achievements">
+          <li>- 11th World Chess Champion</li>
+          <li>
+            - Defeated Boris Spassky 12½-8½ in the 1972 World Championship
+          </li>
+          <li>- Defeated Mark Taimanov 6-0 in the 1971 Candidates</li>
+          <li>- Defeated Bent Larsen 6-0 in the 1971 Candidates</li>
+          <li>- Won the 1970 Palma de Mallorca Interzonal by a huge margin</li>
+        </ul>
+      </section>
+      <a class="home-link" href="./index.html">Home</a>
+    </div>
   </body>
 </html>

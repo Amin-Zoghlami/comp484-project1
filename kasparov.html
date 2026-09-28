@@ -1,12 +1,48 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
+  <!-- dir attribute specifies the direction of text for the entire webpage
+  It is located in the html element. The page is set left-to-right (the default). -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kasparov</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Garry Kasparov</h1>
+    <div class="page">
+      <header>
+        <h1>Garry Kasparov</h1>
+      </header>
+      <section class="player-intro">
+        <p>
+          Garry Kasparov is a Russian chess grandmaster and almost certainly the
+          best Russian chess player of all time. In 1985, he beat then-champion
+          Anatoly Karpov to gain the world champion title. He went on to hold
+          that title for another 15 years (beating Karpov 3 other times) as well
+          as holding the number 1 rating for a record 255 months. He had the
+          highest peak FIDE rating of all time until being surpassed by Magnus
+          Carlsen in 2013. When talking about longevity, this guy takes the
+          cake. Kasparov arguably has the greatest chess career of all time and
+          is a top contender for best chess player of all time. Many would say
+          he is the greatest chess player of all time.
+        </p>
+        <img
+          class="player-image"
+          src="images/kasparov.png"
+          alt="Garry Kasparov"
+        />
+      </section>
+      <section>
+        <h2>Major Achievements</h2>
+        <ul class="achievements">
+          <li>- World Chess Champion from 1985 to 2000</li>
+          <li>- World No. 1 for a record 255 months</li>
+          <li>- Peak FIDE rating of 2851</li>
+          <li>- Defeated Anatoly Karpov in three World Championship matches</li>
+          <li>- Won the Linares tournament nine times</li>
+        </ul>
+      </section>
+      <a class="home-link" href="./index.html">Home</a>
+    </div>
   </body>
 </html>
